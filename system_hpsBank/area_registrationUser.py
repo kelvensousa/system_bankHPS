@@ -1,6 +1,6 @@
 nameBank = 'Banco HPS Sistemas'
 print('=' * 10, {nameBank}, "=" * 10)
-'''
+
 while True:
     id_nameUser = input("Nome: ")
     if all(c.isalpha() or c.isspace() for c in id_nameUser):  # faz com apenas aceita valores alfabéticos.
@@ -29,7 +29,7 @@ while True:
         break  # sai do while.
     else:
         print("Por favor digite um nome válido!")
-'''
+
 print('''
 \t[1] Masculino
 \t[2] Feminino
@@ -56,7 +56,7 @@ while True:
             print(f'{key_selectSexo} Prefiro não dizer')
             break
         else:
-            key_selectSexo = int(input('Digite novamente: '))
+            key_selectSexo = int(input('Confirme novamente: '))
     except:
         print('Valor inválido!')
 
@@ -102,34 +102,3 @@ while True:
 # Definindo minha função na area cadastro
 
 
-def id_name():
-    if id_name == id_name:
-        print('Este nome já consta no sistema! Favor digite novamente.')
-        return id_name
-    else:
-        print(id_name)
-
-
-def id_cpf():
-    if id_cpf == id_cpf:
-        print('Este nome já consta no sistema! Favor digite novamente.')
-        return id_cpf
-    else:
-        print(id_cpf)
-
-
-def id_rg():
-    if id_rg == id_rg:
-        print('Este nome já existe no sistema! Favor digite novamente.')
-        return id_rg
-    else:
-        print(id_rg)
-
-
-def id_numberPhone1():
-    if id_numberPhone1 == id_numberPhone1:
-        print('Este número de telefone já existe. Favor digite novamente.')
-    if id_numberPhone1 == id_numberPhone2:
-        print('Este número de telefone são iguais. Favor verificar número.')
-    else:
-        print(id_numberPhone1)
