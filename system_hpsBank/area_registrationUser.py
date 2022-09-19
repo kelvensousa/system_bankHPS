@@ -1,6 +1,6 @@
 nameBank = 'Banco HPS Sistemas'
 print('=' * 10, {nameBank}, "=" * 10)
-
+'''
 while True:
     id_nameUser = input("Nome: ")
     if all(c.isalpha() or c.isspace() for c in id_nameUser):  # faz com apenas aceita valores alfabéticos.
@@ -29,14 +29,14 @@ while True:
         break  # sai do while.
     else:
         print("Por favor digite um nome válido!")
-
+'''
 print('''
 \t[1] Masculino
 \t[2] Feminino
 \t[3] Transexual
 \t[4] Prefiro não dizer
 ''')
-key_selectSexo = input('Selecione uma das opções: ')
+key_selectSexo = input('Escolha uma das opções: ')
 select1 = 1
 select2 = 2
 select3 = 3
@@ -56,9 +56,10 @@ while True:
             print(f'{key_selectSexo} Prefiro não dizer')
             break
         else:
-            key_selectSexo = int(input('Confirme novamente: '))
+            key_selectSexo = int(input('Digite um valor válido: '))
     except:
         print('Valor inválido!')
+print()
 
 print('''Como você se identifica?
 \t[1] Homem Cisgenero
@@ -67,7 +68,37 @@ print('''Como você se identifica?
 \t[4] Mulher Transgenera
 \t[5] Prefere não dizer
 \t[6] Nenhuma das opções''')
-input('Diga qual é o seu genêro? ')
+key_idGenre = input('Escolha uma das opções: ')
+select1 = 1
+select2 = 2
+select3 = 3
+select4 = 4
+select5 = 5
+select6 = 6
+while True:
+    try:
+        if key_idGenre == select1:
+            print(f'{key_selectSexo} Masculino')
+            break
+        elif key_idGenre == select2:
+            print(f'{key_selectSexo} Feminino')
+            break
+        elif key_idGenre == select3:
+            print(f'{key_selectSexo} Transexual')
+            break
+        elif key_idGenre == select4:
+            print(f'{key_selectSexo} Prefiro não dizer')
+            break
+        elif key_idGenre == select5:
+            print(f'{key_selectSexo} Prefiro não dizer')
+            break
+        elif key_idGenre == select6:
+            print(f'{key_selectSexo} Prefiro não dizer')
+            break
+        else:
+            key_idGenre = int(input('Digite um valor válido: '))
+    except:
+        print('Valor inválido!')
 print()
 
 print('''Estado civil
